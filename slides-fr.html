@@ -260,11 +260,33 @@
 
         ```
         >>> 1 / 2
-        0
+        ???
         ```
-        Pourquoi `1 / 2 = 0`? Nous y reviendrons...
+        
       </script>
     </section>
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+          ## Python peut faire des maths - division
+  
+          Python 2
+          ```
+          >>> 1 / 2
+          0
+          ```
+  
+          Python 3
+          ```python
+          >>> 1 / 2
+          0.5
+          >>> 1 // 2
+          0
+          ```
+  
+          Pourquoi `1 / 2 = 0` en Python 2? Nous y reviendrons...
+        </script>
+      </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -397,7 +419,7 @@
         ```
         
         <br>
-        Vous vous souvenez de l'exemple `1/2 = 0` ? quand Python divise deux **integers**, il &laquo;arrondit&raquo; le résultat au plus petit nombre entier (dans ce cas 0).
+        Vous vous souvenez de l'exemple `1/2 = 0` ? quand Python 2 divise deux **integers**, il &laquo;arrondit&raquo; le résultat au plus petit nombre entier (dans ce cas 0).
 
         Les **types** «integer» sont des nombres entiers (sans décimales), donc si vous voulez être plus précis, `float()` peut être utilisé pour inclure des décimales.
         ```
